@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Web Design Development Workshop</title>
+</head>
+<body>
+    <header> <!-- Header content -->
+        <h1>Web Design Development Workshop</h1>
+    </header>
+    <nav> <!-- Navigation links to other pages-->
+        <a href = "#schedule">Schedule</a> |
+        <a href = "#register">Register</a> |
+        <a href = "#about">About</a>
+    </nav><br>
+    <section id = "aboutevent"> <!-- Section for about the event -->
+        <h2>About the Event</h2>
+        <article><!-- Article for HTML Fundamentals -->
+            <h3>HTML Fundamentals</h3>
+            <p>This session will cover the basics of HTML, including tags, attributes, and document structure.</p>
+        </article>
+        <article><!-- Article for CSS Basics -->
+            <h3>CSS Basics</h3>
+            <p>This session will introduce the fundamentals of CSS, including selectors, properties, and layout techniques.</p>
+        </article>
+         <article><!-- Article for JavaScript Introduction -->
+            <h3>JavaScript Introduction</h3>
+            <p>This session will provide an introduction to JavaScript, covering variables, functions, and basic programming concepts.</p>
+        </article>
+         <article><!-- Article for jQuery Basics -->
+            <h3>jQuery Basics</h3>
+            <p>This session will introduce the fundamentals of jQuery, including selectors, methods, and event handling.</p>
+        </article>
+    </section>
+    <br>
+    <section id = "eventschedule"> <!-- Section for event schedule -->
+        <h2>Event Schedule</h2> 
+        <table border = "1"> <!-- Table for event schedule -->
+            <tr>
+                <th>Time</th>
+                <th>Activity</th>
+                <th>Venue</th>
+                <th>Person in Charge</th>
+            </tr>
+            <tr>
+                <td>9:00 AM - 10:30 AM</td>
+                <td>HTML Fundamentals</td>
+                <td>BYOD1</td>
+                <td>Dines Jagathisan</td>
+            </tr>
+            <tr>
+                <td>10:30 AM - 11:00 AM</td>
+                <td>Coffee Break</td>
+                <td>Cafeteria</td>
+                <td>Mithran Balakrishnan</td>
+            </tr>
+            <tr>
+                <td>11:00 AM - 12:30 PM</td>
+                <td>CSS Basics</td>
+                <td>MP2</td>
+                <td>Muhammad Zulfaqar</td>
+            </tr>
+            <tr>
+                <td>12:30 PM - 1:30 PM</td>
+                <td colspan="3">Lunch Break</td>
+            </tr>
+            <tr>
+                <td>1:30 PM - 3:00 PM</td>
+                <td>JavaScript Introduction</td>
+                <td rowspan = "2">MP1</td>
+                <td>Niroshaen Eliathambhy</td>
+            </tr>
+            <tr>
+                <td>3:00 PM - 3:30 PM</td>
+                <td>jQuery Basics</td>
+                <td>Pagalavan Rajan</td>   
+            </tr>
+        </table>
+    </section>
+    <br><br>
+
+    <section id = "registration"> <!-- Section for registration form -->
+        <h2>Registration Form</h2>
+        <form action = register.html method = "post"> <!-- Form for user registration -->
+            <label for = "fullname">Full Name :</label>
+            <input type = "text" id = "fullname" name = "fullname" required><br><br> <!-- Full Name input field -->
+            <label for = "matricno">Matric Number :</label>
+            <input type = "text" id = "matricno" name = "matricno" required><br><br> <!-- Matric Number input field -->
+            <label for = "email">Email:</label>
+            <input type = "text" id = "email" name = "email" required><br><br> <!-- Email input field -->
+
+            <label>Year of Study :</label><br>
+            <input type = "radio" id = "year1" name = "yearofstudy" value = "1"> <!-- Radio button for Year 1 -->
+            <label for = "year1">1</label><br>
+            <input type = "radio" id = "year2" name = "yearofstudy" value = "2"> <!-- Radio button for Year 2 -->
+            <label for = "year2">2</label><br>
+            <input type = "radio" id = "year3" name = "yearofstudy" value = "3"> <!-- Radio button for Year 3 -->
+            <label for = "year3">3</label><br>
+            <input type = "radio" id = "year4" name = "yearofstudy" value = "4"> <!-- Radio button for Year 4 -->
+            <label for = "year4">4</label><br><br>
+
+            <label>Choose the Workshop :</label><br>
+            <input type = "checkbox" id = "html" name = "html" value = "HTML Fundamentals"> <!-- Checkbox for HTML Fundamentals -->
+            <label for = "html">HTML Fundamentals</label><br>
+            <input type = "checkbox" id = "css" name = "css" value = "CSS Basics"> <!-- Checkbox for CSS Basics -->
+            <label for = "css">CSS Basics</label><br>
+            <input type = "checkbox" id = "javascript" name = "javascript" value = "JavaScript Introduction"> <!-- Checkbox for JavaScript Introduction -->
+            <label for = "javascript">JavaScript Introduction</label><br>
+            <input type = "checkbox" id = "jquery" name = "jquery" value = "jQuery Basics"> <!-- Checkbox for jQuery Basics -->
+            <label for = "jquery">jQuery Basics</label><br><br>
+
+            <label for = "faculty">Faculty :</label>
+            <select name = "faculty" id = "faculty"> <!-- Dropdown for selecting faculty -->
+                <option value = "fskm">FSKM</option>
+                <option value = "fpeps">FPEPS</option>
+                <option value = "fssm">FSSM</option>
+                <option value = "fpm">FPM</option>
+                <option value = "fspa">FSPA</option>
+            </select><br><br>
+
+            <input type = "submit" value = "Submit"> <!-- Submit button for the form -->
+        </form>
+    </section>
+<footer> <!-- Footer content -->
+    <p>&copy; 2026   Web Design Development Workshop. All rights reserved.</p>
+</footer>
+</body>
+</html>

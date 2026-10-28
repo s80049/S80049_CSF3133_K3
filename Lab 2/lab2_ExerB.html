@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Course Feedback</title>
+</head>
+<body>
+    <header>
+        <h1>CSF3133 Course Feedback</h1>
+    </header> <!-- Error 1 (Line 10) Remove this comment. </header> is correct.-->
+    <nav>
+        <a href = "#results">Results</a> | <a href = "#form">Feedback Form</a> | <a href = "#comments">Student Comments</a>
+    </nav>
+    <section id = "results">
+        <h2>Feedback Summary</h2>
+        <table border = "1">
+            <tr>
+                <th>Week</th>
+                <th>Topic</th>
+                <th>Rating</th> <!-- Error 2 (Line 20) Incorrect put as table data. Supposely should be table header -->
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Introduction to HTML</td>
+                <td>4.5</td>
+            </tr><!-- Error 3 (Line 26) Missing closing tag for table row-->
+            <tr>
+                <td>2</td>
+                <td colspan = "2">Tables and Forms</td> <!-- Error 4 (Line 32)  Should not use colspan = "3" because it will merge the three columns into one. 
+                It should be colspan = "2" to merge the two columns into one. -->
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Semantic HTML</td> <!-- Error 5 (Line 32) Missing closing tag for table data -->
+                <td>4.0</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td rowspan = "2">Mini Project</td>
+                <td>4.3</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>4.6</td>
+            </tr>
+            <tr>
+                <td>Average Rating</td>
+                <td colspan = "2">3.48</td> 
+            </tr>
+        </table>
+    </section>
+    <section id = "form">
+        <h2>Give Your Feedback</h2>
+        <form action = "submit_feedback.php" method = "post">
+            <label for = "name">Name:</label>
+            <input type = "text" id = "name" name = "name"><br> <!-- Error 6 (Line 40) for attribute in <label> should match the id of the input type="text" -->
+            <label for = "email">Email:</label>
+            <input type = "text" id = "email" name = "email"><br>
+            
+            <label>Overall Rating:</label><br>
+            <input type = "radio" id = "good" name = "rating" value = "good"> <!-- Error 7 (Line 42) for attribute in <label> should match the name of the 
+                input type="radio" -->
+            <label for = "good">Good</label>
+            <input type = "radio" id = "average" name = "rating" value = "average">
+            <label for = "average">Average</label>
+            <input type = "radio" id = "poor" name = "rating" value = "poor">
+            <label for = "poor">Poor</label><br>
+            <input type = "checkbox" id = "lab" name = "lab" value = "yes">
+            <label for = "lab">I attended all labs</label><br>
+            <input type = "checkbox" id = "lab1" name = "lab1" value = "yes">
+            <label for = "lab1">Topic I want more practice on</label><br>
+            <input type = "checkbox" id = "lab2" name = "lab2" value = "yes">
+            <label for = "lab2">Another topic I want more practice on</label><br>
+
+            <label for = "group">Group :</label>
+            <select name = "group" id = "group">
+                <option value = "k1">K1</option>
+                <option value = "k2">K2</option>
+                <option value = "k3">K3</option>
+                <option value = "k4">K4</option>
+                <option value = "k5">K5</option>
+            </select><br><br>
+            <input type = "submit" value = "Submit">
+        </form> <!-- Error 8 (Line 49) Wrong closing tag for <form> -->
+    </section>
+    <section id = "comments">
+        <h2>Student Comments</h2>
+        <article>
+            <h3>DINES JAGATHISAN</h3>
+            <p>Overall, I found the course to be very informative and engaging. The hands-on labs were particularly helpful in reinforcing the concepts 
+                taught in class.</p>
+        </article>
+        <article>
+            <h3>MITHRAN BALAKRISHNAN</h3>
+            <p>The course was well-structured and the instructor was knowledgeable. I enjoyed the interactive nature of the labs and the opportunity to 
+                apply what we learned in real-world scenarios.</p>
+        </article>
+    </section>
+    <footer>
+        <p>Copyright &copy; 2026 CSF3133</p><!-- Error 9 (Line 52) Missing semicolon for &copy -->
+    </footer>
+</body>
+</html>
