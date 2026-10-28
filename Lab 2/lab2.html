@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Profile</title>
+</head>
+<body>
+    <header>
+        <h1>My Profile</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <section>
+        <h2>About Myself</h2>
+        <article>
+        <table border = "1">
+            <tr>
+                <th>Name</th>
+                <td>Dines Jagathisan</td>
+            </tr>
+            <tr>
+                <th>Age</th>
+                <td>22</td>
+            </tr>
+            <tr>
+                <th>Occupation</th>
+                <td>University Student</td>
+            </tr>
+            <tr>
+                <th>University Name</th>
+                <td>University Malaysia Terengganu(UMT)</td>
+            </tr>
+        </table>
+        </article>
+        <br><br>
+        <article>
+            <form action = "submit_form.php" method = "post">
+                <label for = "name">Name:</label>
+                <input type = "text" id = "name" name = "name" required><br><br>
+                <label for = "email">Email:</label>
+                <input type = "email" id = "email" name = "email" required><br><br>
+
+                <label for = "gender">Gender:</label><br>
+                <input type = "radio" id = "male" name = "gender" value = "male">
+                <label for = "male">Male</label><br>
+                <input type = "radio" id = "female" name = "gender" value = "female">
+                <label for = "female">Female</label><br><br>
+
+                <label for = "hobbies">Favourite Hobbies:</label><br>
+                <input type = "checkbox" id = "listeningmusic" name = "listeningmusic" value = "listening music">
+                <label for = "listeningmusic">Listening Music</label><br>
+                <input type = "checkbox" id = "traveling" name = "traveling" value = "traveling">
+                <label for = "traveling">Traveling</label><br>
+                <input type = "checkbox" id = "gaming" name = "gaming" value = "gaming">
+                <label for = "gaming">Gaming</label><br>
+                <input type = "checkbox" id = "other" name = "other" value = "other">
+                <label for = "other">Other</label><br><br>
+                <input type = "submit" value = "Submit">
+            </form>
+        </article>
+    </section>
+</body>
+<footer>
+    <p>&copy; 2026 Dines Jagathisan. All rights reserved.</p>
+</footer>
+</html>
