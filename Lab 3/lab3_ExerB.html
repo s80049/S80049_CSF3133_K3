@@ -1,0 +1,61 @@
+<!DOCTYPE html> <!-- Error 1: Missing html in DOCTYPE declaration -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ticket Booking</title>
+</head>
+<body>
+    <div id = "header">
+        <h1>e-Ticket <span>Your Campus Cinema</span></h1> <!-- Error 2: Wrongly places span. Supposely closing tag of span must be inside closing h1 tag -->
+    </div>
+    <div id = "content"> <!-- Error 3 : Used span(only for inline). Supposely should be div(for block line) -->
+        <h2>Book Your Ticket</h2>
+        <p>Promotion: tickets &lt; RM10 for students &amp; staff!</p> <!-- Error 4: Used < instead of &lt; -->
+        <form action = "booking.php" oninput = "total.value = Number(adult.value) + Number(child.value); price.value = parseInt(adult.value * 12) + parseInt(child.value * 8);" 
+        method = "post"> <!-- Error 5 : Missing method attribute (post) --> <!--Error 6 : missing Number() conversion -->
+            <label for = "name">Name:</label>
+            <input type = "text" name = "name" id = "name" placeholder="Enter your name" required autofocus><br>
+            <label for = "email">Email:</label>
+            <input type = "email" id = "email" name = "email" placeholder = "Enter your email" required><br> <!-- Error 7 : Typo : input type should be "email" -->
+            <label for = "phone">Phone:</label>
+            <input type = "tel" id = "phone" name = "phone" placeholder = "Enter your phone number" required><br>
+            <label for = "date">Show date : </label>
+            <input type = "date" id = "date" name = "date"><br>
+            <label for = "time">Show time : </label>
+            <input type = "time" id = "time" name = "time" placeholder = "Select show time" required><br>
+            <label for = "movie">Movie:</label>
+            <input id = "movie" name = "movie" list = "movielist"><br> <!-- Error 8 : list attribute should reference the datalist id -->
+            <datalist id = "movielist">
+                <option value = "Space Rangers">
+                <option value = "Kampung Comedy">
+                <option value = "Avengers Doomsday"></option>
+                <option value = "Spiderman Brand New Day"></option>
+                <option value = "Deadpool & Wolverine"></option>
+            </datalist>
+            <label for = "adult">Adult tickets:</label>
+            <input type = "number" id = "adult" name = "adult" value = "0"><br>
+            <label for = "child">Child tickets:</label>
+            <input type = "number" id = "child" name = "child" value = "0"><br>
+            <label for = "rating">Rate our service:</label>
+            <input type = "range" id = "rating" name = "rating" min = "1" max = "5"><br> <!-- Error 9: Incorrect min and max values for range input -->
+            Total tickets: <output name = "total" for = "adult child">0</output><br> <!-- Error 10: Incorrect for attribute value. Should reference the ids of the input elements -->
+            Total price : RM <output name = "price" for = "adult child">0</output><br>
+            <input type = "submit" value = "Book Now">
+        </form>
+    </div>
+    <div id ="sidebar">
+        <h2>Now Showing</h2>
+        <ul>
+            <li><strong>Space Rangers</strong> - U - <a href="https://youtu.be/S0pRXnRbiVc?si=VP9M0WQ63VxVW07k">Watch Trailer</a></li>
+            <li><strong>Kampung Comedy</strong> - P13 - <a href="https://youtu.be/iwES-nQspcQ?si=P8xHiw5nN4B_Vnbp">Watch Trailer</a></li>
+            <li><strong>Avengers Doomsday</strong> - P13 - <a href="https://youtu.be/irVNGjRFZGk?si=zeKrxu4wp-UI_zNg">Watch Trailer</a></li>
+            <li><strong>Spiderman Brand New Day</strong> - U - <a href="https://youtu.be/62bIsvRcPv0?si=VRN-6Mu5w-Xgq2Rr">Watch Trailer</a></li>
+            <li><strong>Deadpool & Wolverine</strong> - 18 - <a href="https://youtu.be/73_1biulkYk?si=fjTnZdm7lP0PQGkY">Watch Trailer</a></li>
+        </ul>
+    </div>
+    <div id = "footer">
+        <p>&copy; 2026 CineKampus. All rights reserved.</p>
+        <p>e-Ticket&reg; - Campus Cinema &lt; RM10 every Tuesday &amp; Friday</p>
+    </div>
+</body>
+</html><!-- Error 11: Extra closing tag-->
