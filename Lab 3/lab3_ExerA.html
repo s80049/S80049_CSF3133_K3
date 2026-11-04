@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head> <!-- Head Section of HTML-->
+    <title>Ali Spices Bakery</title>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <!-- Body Section of HTML -->
+    <div id = "header"> <!-- Header Section to display title and sLOGAN -->
+        <h1>Welcome to Ali Spices Bakery!  
+        <span>Fresh Baked Goods!</span></h1>
+    </div>
+    <br>
+    <div id = "nav"> <!-- Navigation Section to navigate to Home, About Us and Contact Us page -->
+        <a href = "#">Home</a> |
+        <a href = "#">About Us</a> |
+        <a href = "#">Contact Us</a>
+    </div>
+    <div id = "content"> <!-- Content Section to display introduction, get input from the user by providing a form -->
+        <h2>Introduction</h2> <!-- Introduction heading and paragraph -->
+        <p><strong><em>Ali Spices Bakery</em></strong> is a bakery that offers a variety of delicious baked goods, snacks, and food products. 
+            It aims to provide customers with fresh, tasty, and high-quality products at affordable prices. 
+            With a focus on customer satisfaction and quality service, Ali Spices Bakery strives to create an enjoyable experience for everyone who visits. 
+            <a href = "products.html">View Our Products</a></p> <!-- Introduction paragraph with a link to the products page -->
+            <!-- Form Section to get input from the user -->
+        <form action = "submit_order.php" method = "post" oninput = "total.value = (cupcakes.value * 3) + (cakeslices.value * 5)">
+            <label for = "name">Name : </label> <!-- Label and input field for customer name -->
+            <input type = "text" id = "name" name = "name" placeholder = "Customer Name" autofocus required><br><br>
+            <label for = "phonenum">Phone Number : </label> <!-- Label and input field for phone number -->
+            <input type = "tel" id = "phonenum" name = "phonenum" placeholder = "Phone Number" required><br><br>
+            <label for = "email">Email : </label> <!-- Label and input field for email -->      
+            <input type = "email" id = "email" name = "email" placeholder = "Email Address" required><br><br>
+            <label for = "pickupdate">Pick-up Date : </label> <!-- Label and input field for pick-up date -->
+            <input type = "date" id = "pickupdate" name = "pickupdate"><br><br>
+            <label for = "pickuptime">Pick-up Time : </label> <!-- Label and input field for pick-up time -->
+            <input type = "time" id = "pickuptime" name = "pickuptime"><br><br>
+            <label for = "flavour">Flavour : </label> <!-- Label and input field for flavour -->
+            <input type="text" id="flavour" name="flavour" list="flavourList">
+            <datalist id = "flavourList">
+                <option value = "Chocolate">
+                <option value = "Vanilla">
+                <option value = "Strawberry">
+                <option value = "Blueberry">
+            </datalist><br><br>
+            <label for = "icingflavour">Choose icing colour : </label> <!-- Label and input field for icing colour -->
+            <input type = "color" id = "icingflavour" name = "icingflavour"><br><br>
+            <label for = "sweetness">Sweetness Level : </label> <!-- Label and input field for sweetness level -->
+            <input type = "range" id = "sweetness" name = "sweetness" min = "1" max = "5" step = "1"><br><br>
+
+            <h3>Price Calculator</h3>
+            <label for = "cupcakes">Number of Cupcakes (RM 3.00 each): </label> <!-- Label and input field for number of cupcakes -->
+            <input type = "number" id = "cupcakes" name = "cupcakes" min = "0" value = "0"><br><br>
+            <label for = "cakeslices">Number of Cake Slices (RM 5.00 each): </label> <!-- Label and input field for number of cake slices -->
+            <input type = "number" id = "cakeslices" name = "cakeslices" min = "0" value = "0"><br><br>
+            <label>Total Price: RM&nbsp;</label>
+            <output name = "total" for = "cupcakes cakeslices">0</output><br><br> <!-- Label and output field for total price -->
+            <input type = "submit" value = "Submit">
+        </form>
+    </div>
+    <div id = "sidebar"> <!-- Sidebar Section to display price list -->
+        <h2>Price List</h2>
+        <!-- Price List Section to display the price of each product -->
+        <p>Ali Spices Bakery&reg;</p>
+        <ul>
+            <li>Banana Cake - RM&nbsp;2.50</li>
+            <li>Donut - RM&nbsp;3.00</li>
+            <li>Muffin - RM&nbsp;2.40</li>
+            <li>Croissant - RM&nbsp;3.80</li>
+            <li>Bagel - RM&nbsp;2.50</li>
+            <li>Blueberry Muffin - RM&nbsp;2.50</li>
+            <li>Cupcakes - RM&nbsp;3.00</li>
+            <li>Cake Slices - RM&nbsp;5.00</li>
+        </ul>
+        <!-- Special Offer Section -->
+        <p><strong>Special Offer:</strong> Orders &gt; 10 pieces get a free drink!</p>
+    </div>
+    <div id = "footer"><!-- Footer Section to display copyright information -->
+        <p>&copy; 2026 Ali Spices Bakery. All rights reserved.</p>
+    </div>
+</body> <!-- End of Body Section-->
+</html> <!-- End of HTML -->
+<!-- For myemail, it show warning that it must be a valid email address that includes an "@" symbol and a domain -->
