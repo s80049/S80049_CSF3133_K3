@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-- Error 1: Missing html in DOCTYPE declaration -->
+<!DOCTYPE html> <!-- Error 1(Line 1): Missing html in DOCTYPE declaration -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,17 +6,17 @@
 </head>
 <body>
     <div id = "header">
-        <h1>e-Ticket <span>Your Campus Cinema</span></h1> <!-- Error 2: Wrongly places span. Supposely closing tag of span must be inside closing h1 tag -->
+        <h1>e-Ticket <span>Your Campus Cinema</span></h1> <!-- Error 2(Line 9): Wrongly places span. Supposely closing tag of span must be inside closing h1 tag -->
     </div>
-    <div id = "content"> <!-- Error 3 : Used span(only for inline). Supposely should be div(for block line) -->
+    <div id = "content"> <!-- Error 3(Line 11): Used span(only for inline). Supposely should be div(for block line) -->
         <h2>Book Your Ticket</h2>
-        <p>Promotion: tickets &lt; RM10 for students &amp; staff!</p> <!-- Error 4: Used < instead of &lt; -->
+        <p>Promotion: tickets &lt; RM10 for students &amp; staff!</p> <!-- Error 4(Line 13): Used < instead of &lt; -->
         <form action = "booking.php" oninput = "total.value = Number(adult.value) + Number(child.value); price.value = parseInt(adult.value * 12) + parseInt(child.value * 8);" 
-        method = "post"> <!-- Error 5 : Missing method attribute (post) --> <!--Error 6 : missing Number() conversion -->
+        method = "post"> <!-- Error 5(Line 14): Missing method attribute (post) --> <!--Error 6(Line 14: missing Number() conversion -->
             <label for = "name">Name:</label>
             <input type = "text" name = "name" id = "name" placeholder="Enter your name" required autofocus><br>
             <label for = "email">Email:</label>
-            <input type = "email" id = "email" name = "email" placeholder = "Enter your email" required><br> <!-- Error 7 : Typo : input type should be "email" -->
+            <input type = "email" id = "email" name = "email" placeholder = "Enter your email" required><br> <!-- Error 7(Line 18): Typo : input type should be "email" -->
             <label for = "phone">Phone:</label>
             <input type = "tel" id = "phone" name = "phone" placeholder = "Enter your phone number" required><br>
             <label for = "date">Show date : </label>
@@ -24,7 +24,7 @@
             <label for = "time">Show time : </label>
             <input type = "time" id = "time" name = "time" required><br>
             <label for = "movie">Movie:</label>
-            <input id = "movie" name = "movie" list = "movielist"><br> <!-- Error 8 : list attribute should reference the datalist id -->
+            <input id = "movie" name = "movie" list = "movielist"><br> <!-- Error 8(Line 22): list attribute should reference the datalist id -->
             <datalist id = "movielist">
                 <option value = "Space Rangers">
                 <option value = "Kampung Comedy">
@@ -37,8 +37,8 @@
             <label for = "child">Child tickets:</label>
             <input type = "number" id = "child" name = "child" value = "0"><br>
             <label for = "rating">Rate our service:</label>
-            <input type = "range" id = "rating" name = "rating" min = "1" max = "5"><br> <!-- Error 9: Incorrect min and max values for range input -->
-            Total tickets: <output name = "total" for = "adult child">0</output><br> <!-- Error 10: Incorrect for attribute value. Should reference the ids of the input elements -->
+            <input type = "range" id = "rating" name = "rating" min = "1" max = "5"><br> <!-- Error 9(Line 32): Incorrect min and max values for range input -->
+            Total tickets: <output name = "total" for = "adult child">0</output><br> <!-- Error 10(Line 33): Incorrect for attribute value. Should reference the ids of the input elements -->
             Total price : RM <output name = "price" for = "adult child">0</output><br>
             <input type = "submit" value = "Book Now">
         </form>
@@ -58,4 +58,4 @@
         <p>e-Ticket&reg; - Campus Cinema &lt; RM10 every Tuesday &amp; Friday</p>
     </div>
 </body>
-</html><!-- Error 11: Extra closing tag-->
+</html><!-- Error 11(Line41): Extra closing tag-->
