@@ -1,0 +1,194 @@
+/* General Styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #d6eaf8;
+    padding: 25px;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #1a5276;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    display: block;
+    padding: 14px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Navigation Link States */
+nav a:link {
+    color: white;
+}
+
+nav a:visited {
+    color: #d5dbdb;
+}
+
+nav a:hover {
+    background-color: #2980b9;
+    color: yellow;
+    text-decoration: underline;
+}
+
+nav a:active {
+    background-color: #154360;
+    color: white;
+}
+
+/* Main Content */
+main {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+section {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Headings */
+h2 {
+    color: #1a5276;
+    text-decoration: underline;
+}
+
+h3 {
+    color: #2874a6;
+}
+
+/* Article */
+article {
+    padding: 10px;
+}
+
+/* General Links */
+a {
+    color: #154360;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: red;
+    text-decoration: overline;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:active {
+    color: orange;
+}
+
+/* Video */
+video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Form */
+form {
+    background-color: #ebf5fb;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+form label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+/* Radio Buttons and Checkboxes */
+.option {
+    margin-top: 8px;
+}
+
+.option input {
+    margin-left: 10px;
+}
+
+.option label {
+    display: inline;
+    font-weight: normal;
+}
+
+/* Submit Button */
+button {
+    background-color: #1a5276;
+    color: white;
+    padding: 12px 25px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Footer */
+footer {
+    background-color: #1a5276;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    nav li {
+        display: block;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    header {
+        padding: 15px;
+    }
+}
