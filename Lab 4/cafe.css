@@ -1,0 +1,82 @@
+
+/* Navigation Bar */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #1A5276;
+    text-align: center;
+}
+
+/* Navigation List Items */
+nav li {
+    display: inline-block;
+}
+
+/* Navigation Links */
+nav a {
+    display: block;
+    padding: 12px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+}
+
+/* Navigation Link States */
+nav a:link {
+    color: white;
+}
+
+nav a:visited {
+    color: white;
+}
+
+/* Navigation Hover Effect */
+nav a:hover {
+    background-color: #E67E22;
+    color: white;
+}
+
+nav a:active {
+    background-color: #C0392B;
+    color: white;
+}
+
+/* Video Section */
+#video {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Video Styling */
+video {
+    width: 50%;
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #1A5276;
+    border-radius: 8px;
+}
+
+/* Video Caption */
+figcaption {
+    text-align: center;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+/* Video Heading */
+#video h2 {
+    text-align: center;
+}
+
+/* Responsive Navigation Bar */
+@media screen and (max-width: 600px) {
+    nav li {
+        display: block;
+    }
+
+    nav a {
+        display: block;
+    }
+}
