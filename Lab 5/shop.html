@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Campus Bookstore</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+<!--
+Error 1 (shop.html, Line 7): Changed "stylesheets" to "stylesheet".
+Error 2 (shop.html, Line 18): Moved the style part into head from body.
+Error 3 (shop.html, Line 18): Moved the style rule into the CSS file.
+Error 4 (shop.html, Line 18): Changed invalid color syntax to valid CSS.
+Error 5 (shop.html, Line 20): Changed table ID from "product" to "products".
+Error 6 (shop.css, Line 2): Corrected "Robotto" to "Roboto".
+Error 7 (shop.css, Line 4): Changed "no repeat" to "no-repeat".
+Error 8 (shop.css, Line 5): Corrected "bacground-position" to "background-position".
+Error 9 (shop.css, Line 18): Changed "inline" to "block".
+Error 10 (shop.css, Line 23): Corrected "li:a:hover" to "li a:hover".
+Error 11 (shop.css, Line 27): Changed "collapsed" to "collapse".
+Error 12 (shop.css, Line 34): Changed nth-child(2) to nth-child(even).
+Error 13 (shop.css, Line 37): Corrected "hovered" to "hover".
+Error 14 (shop.css, Line 45): Added a missing semicolon.
+-->
+
+<header>
+    <h1>Campus Bookstore</h1>
+    <p>Textbooks, stationery and more for every student.</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#books">Books</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<main>
+    <section id="books">
+        <h2>Our Products</h2>
+
+        <table id="products">
+            <tr>
+                <th>Item</th>
+                <th>Category</th>
+                <th>Price (RM)</th>
+            </tr>
+
+            <tr>
+                <td>Web Design Basics</td>
+                <td>Textbook</td>
+                <td class="price">45.00</td>
+            </tr>
+
+            <tr>
+                <td>A4 Notebook</td>
+                <td>Stationery</td>
+                <td class="price">6.50</td>
+            </tr>
+
+            <tr>
+                <td>USB Drive 32GB</td>
+                <td>Gadget</td>
+                <td class="price">25.00</td>
+            </tr>
+
+            <tr>
+                <td>Highlighter Set</td>
+                <td>Stationery</td>
+                <td class="price">9.90</td>
+            </tr>
+        </table>
+    </section>
+</main>
+
+<footer id="contact">
+    <p>&copy; 2026 Campus Bookstore</p>
+</footer>
+
+</body>
+</html>

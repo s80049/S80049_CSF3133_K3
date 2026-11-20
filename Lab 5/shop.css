@@ -1,0 +1,112 @@
+
+/* Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: #FDF7F0;
+}
+
+/* Header Styling */
+header {
+    background-image: url("books.jpg");
+    background-size: cover;
+    background-position: right top;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+    padding: 60px;
+}
+
+/* Heading Font */
+h1, h2 {
+    font-family: 'Merriweather', serif;
+}
+
+/* Paragraph Styling */
+p {
+    line-height: 1.6;
+}
+
+/* Navigation Bar Styling */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Navigation List Items */
+nav li {
+    float: left;
+}
+
+/* Navigation Links */
+nav li a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Active Home Link */
+nav li a.active {
+    background-color: #04AA6D;
+}
+
+/* Navigation Hover Effect */
+nav li a:hover {
+    background-color: #111;
+}
+
+/* Main Content Styling */
+main {
+    padding: 20px;
+}
+
+/* Table Styling */
+#products {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/* Table Borders and Cell Padding */
+#products td, #products th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+/* Table Header Styling */
+#products th {
+    background-color: #04AA6D;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+/* Grey Background for Even Rows */
+#products tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Table Row Hover Effect */
+#products tr:hover {
+    background-color: #ddd;
+}
+
+/* Align Price Column to the Right */
+#products td:last-child,
+#products th:last-child {
+    text-align: right;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px;
+    margin-top: 63px;
+    margin-bottom: 0;
+}
